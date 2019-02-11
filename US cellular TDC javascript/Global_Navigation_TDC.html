@@ -1,0 +1,608 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style>
+	
+body.IE11 {
+    overflow-y: scroll;
+	overflow-x: scroll;
+    -ms-overflow-style: scrollbar;
+	padding-bottom: 25px !important;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+    font-size: 1em;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-overflow-style: -ms-autohiding-scrollbar !important;
+	overflow: hidden;
+}
+	
+@viewport { width: 100% !important; }	
+	
+@media only screen and (max-width: 640px){
+	
+	@viewport { width: auto !important; }
+
+	html{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+		
+	h1, h2, h3, h4, p {
+      font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	}
+
+	a {	
+		 cursor: pointer;
+	}	
+	
+	.a {
+		cursor: pointer;
+		color: #337AB7 !important;
+		font-weight: normal !important;
+		text-decoration: underline;
+		line-height: 1.6;
+	}
+		
+	.ms-rtestate-field p, p.ms-rteElement-P {
+		margin: 0px 0px 10px 0px;
+		line-height: 1.6;
+	}
+
+	.h1 {		
+		font-size: 20pt !important;
+		width: 576px;
+	}	
+		
+	.h2 {
+		font-size: 14pt !important;
+		width: 570px;	
+	}
+		
+	.headertext2 {
+		margin-top: 0px;
+		margin-bottom: 10px !important;
+		font-weight: bold !important;
+		margin-left: 0px !important;
+		color: #0065A4 !important;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;	
+	}		
+		
+	.text2 {
+		width: 579px !important;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	}	
+
+	.text3 {
+		text-align: left;
+		width: 579px !important;
+		font-weight: normal;
+	}	
+
+	.headertext4 {
+		margin-top: -40px !important;
+		margin-bottom: 0px !important;
+		font-weight: bold !important;
+		color: #0065a4 !important;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	}
+		
+	.p_text {
+		margin: 4px 0px 0 21px;
+		width: 576px;
+		font-size: 10pt;
+		height: auto!important;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif, "!important !important";
+	}
+
+	.text1 {
+		margin: -2px 0px 0 15px !important;
+		line-height: 1.6 !important;
+		text-align: left;
+		font-size: 1em;
+		width: 576px !important;
+		height: auto;
+		padding-bottom: 8px;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	}
+		
+	.text_one {
+		line-height: 1.6 !important;
+		text-align: left;
+		font-size: 1em;
+		width: 576px !important;
+		padding-bottom: 2px !important;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	}	
+		
+	.ms-mpSearchBox {
+		width: 250px;
+		margin: 26px 0 0 1611px !important;
+		position: absolute !important;
+		left: 0;
+		top: 0;
+	}
+			
+	.scroll {
+		overflow: hidden;
+		-ms-overflow-style: none;
+		overflow: -moz-scrollbars-none;
+	}		
+
+	.ddsmoothmenu ul li ul li ul {
+		position: absolute;
+		top: -10px;
+		left: 165px !important;
+	}
+
+	.ddsmoothmenu ul li ul li a {
+		font: normal 11px "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+		width: 163px;
+		padding: 4px;
+	}
+
+	.ddsmoothmenu ul li ul li a {
+		font: normal 11px "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+		width: 185px;
+		padding: 4px;
+	}
+
+	.ddsmoothmenu ul li {
+		position: relative;
+		display: inline;
+		float: left;
+		margin-bottom: 0px;
+	}
+
+	.ms-core-listMenu-horizontalBox ul, .ms-core-listMenu-horizontalBox li, .ms-core-listMenu-horizontalBox .ms-core-listMenu-item, .ms-core-listMenu-horizontalBox > ul > li > table {
+		display: inline-none!important;
+		display:none !important;
+	}
+
+	.wrapper12 {
+		width: 1300px;
+		height: 42px;
+		background-color: #fff;
+		position: absolute;
+		margin: -83px 0 0 8px;
+		z-index: 10;
+	}
+
+	.navigation {
+		margin: 0px 0 0 -27px;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		margin-left: 63px;
+		margin-top: 10px;
+		margin-right: 9px;
+	}
+
+	.dropdown-content {
+		display: none;
+		text-align: left;
+		position: absolute;
+		text-decoration: none;
+		background-color: #f2f2f2;
+		min-width: 197px;
+		z-index: 1;
+		margin-left: -5px;
+		margin-top: 4px;
+		font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+	}
+
+	.dropbtn {
+		color: #000 !important;
+		margin-left: -5px;
+		padding: -1px;
+		font-size: 16px !important;
+		font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+		border: none;
+		font-weight: bold;
+		padding-left: 20px;
+		padding-right: 20px;
+		cursor: pointer;
+	}
+
+	.dropdown-content a {
+		color:black;
+		padding:12px 16px;
+		text-decoration:none !important;
+		display:block;
+	}
+
+	.dropdown-content a:hover {
+		background-color:#0065A4;
+		color:#fff;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display:block;
+	}
+
+	.dropdown:hover .dropbtn {
+		font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+		border-bottom: 4px solid #0065A4;
+	}
+	.staticcolor {
+		background-color: #EE3040;	
+	}
+		
+	.ms-rtestate-field h1, h1.ms-rteElement-H1 {
+		line-height: 1.6;
+		color: #0065a4 !important;
+	}	
+		
+	.ms-rtestate-field h2, h2.ms-rteElement-H2 {
+		line-height: 1.6;
+		color: #000 !important;				
+	}
+}
+	
+<!-- End of Media Query -->			
+	
+h1, h2, h3, h4, p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+a {	
+	 cursor: pointer;
+}	
+		
+.a {
+    cursor: pointer;
+    color: #337AB7 !important;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 1.6;
+}
+	
+.ms-rtestate-field p, p.ms-rteElement-P {
+    margin: 0px 0px 10px 0px;
+    line-height: 1.6;
+}
+
+
+.h1 {	
+	font-size: 20pt !important;
+	width: 576px;
+}	
+
+.h2 {
+	font-size: 14pt !important;
+	width: 570px;	
+}
+
+.p_text {
+    margin: 4px 0px 0 21px;
+    width: 576px;
+    font-size: 10pt;
+    height: auto!important;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif, "!important !important";
+}
+	
+.text1 {
+    margin: -2px 0px 0 15px !important;
+    line-height: 1.6 !important;
+    text-align: left;
+    font-size: 1em;
+    width: 576px;
+    height: auto;
+    padding-bottom: 8px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+}
+	
+.text_one {
+    line-height: 1.6 !important;
+    text-align: left;
+	font-size: 1em;
+    width: 570px;
+	padding-bottom: 8px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+}	
+	
+.ms-mpSearchBox {
+    width: 250px;
+    margin: 26px 0 0 1611px !important;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+}
+
+.ddsmoothmenu ul li ul li ul {
+    position: absolute;
+    top: -10px;
+    left: 165px !important;
+}
+
+.ddsmoothmenu ul li ul li a {
+    font: normal 11px "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+    width: 163px;
+    padding: 4px;
+}
+
+.ddsmoothmenu ul li ul li a {
+    font: normal 11px "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+    width: 185px;
+    padding: 4px;
+}
+
+.ddsmoothmenu ul li {
+    position: relative;
+    display: inline;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.ms-core-listMenu-horizontalBox ul, .ms-core-listMenu-horizontalBox li, .ms-core-listMenu-horizontalBox .ms-core-listMenu-item, .ms-core-listMenu-horizontalBox > ul > li > table {
+    display: inline-none!important;
+    display:none !important; 
+}
+	
+.wrapper12 {
+   -webkit-transform: translateZ(0) !important;
+}
+
+.wrapper12 {
+    width: 1300px;
+    height: 42px;
+    background-color: #fff;
+    position: absolute;
+    margin: -83px 0 0 8px;
+    z-index: 10;
+}
+
+.navigation {
+    margin: 0px 0 0 -27px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 63px;
+    margin-top: 10px;
+    margin-right: 9px;
+}
+
+.dropdown-content {
+    display: none;
+    text-align: left;
+    position: absolute;
+	text-decoration: none;
+    background-color: #f2f2f2;
+    min-width: 197px;
+    z-index: 1;
+    margin-left: -5px;
+    margin-top: 4px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+}
+
+.dropbtn {
+    color: #000 !important;
+    margin-left: -5px;
+    padding: -1px;
+    font-size: 16px !important;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    border: none;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+	color:black;
+	padding:12px 16px;
+	text-decoration:none !important;
+	display:block;
+}
+
+.dropdown-content a:hover {
+	background-color:#0065A4;
+	color:#fff;
+}
+
+.dropdown:hover .dropdown-content {
+	display:block;
+}
+
+.dropdown:hover .dropbtn {
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    border-bottom: 4px solid #0065A4;
+}
+.staticcolor {
+	background-color: #EE3040;	
+}
+	
+.ms-rtestate-field h1, h1.ms-rteElement-H1 {
+    line-height: 1.6;
+    color: #0065a4 !important;
+}	
+	
+.ms-rtestate-field h2, h2.ms-rteElement-H2 {
+	line-height: 1.6;
+    color: #000 !important;	
+}
+	
+/* Chrome Specific CSS */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	.dropdown-content {
+		display: none;
+		text-decoration: none;
+		text-align: left;
+		position: absolute;
+		background-color: #f2f2f2;
+		min-width: 197px;
+		z-index: 1;
+		margin-left: -5px;
+		margin-top: 4px;
+		font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+	}
+
+	.wrapper12 {
+	   -webkit-transform: translateZ(0) !important;
+	}	
+			
+	.wrapper12 {
+		width: 1279px;
+		height: 42px;
+		background-color: #fff;
+		position: absolute;
+		margin: -83px 0 0 20px;
+		z-index: 10;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		margin-left: 58px;
+		margin-top: 10px;
+		position: relative !important;
+	}
+	
+	.text1 {
+		margin: -2px 0px 0 15px !important;
+		line-height: 1.6 !important;
+		text-align: left;
+		font-size: 1em;
+		width: 576px;
+		height: auto;
+		padding-bottom: 10px;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	}
+}
+
+</style>
+<div class="wrapper12" unselectable="on">
+	<div class="dropdown" unselectable="on"> 
+		<a class="dropbtn grad" href="/sites/AL/TM/Pages/talent_management.aspx" style="color:#fff; text-decoration:none;" id="talentm_navbtn">Talent Management
+			<!--<button class="dropbtn grad" unselectable="on">Talent Management</button>-->
+		</a>
+		<!--<div class="dropdown-content" unselectable="on"> 
+			<a href="/sites/AL/TM/Pages/performance_management.aspx" unselectable="on">Performance Management</a>		
+			<a href="/sites/AL/TM/Pages/idp.aspx" unselectable="on">Individual Development Plan</a>
+			<a href="/sites/AL/TM/Pages/talent_review.aspx" unselectable="on">Talent Review</a>
+		</div>-->
+	</div>
+	<div class="dropdown" unselectable="on">
+		<a class="dropbtn grad" href="/sites/AL/CD/Pages/learning_resources_01.aspx" style="color:#fff; text-decoration:none;" id="career_navbtn">Career Development
+			<!--<button class="dropbtn grad" unselectable="on">Career Development</button>-->
+		</a> 
+		<div class="dropdown-content" unselectable="on">
+
+			<a href="/sites/AL/CD/Pages/associate_leadership_development.aspx" unselectable="on">Associate &amp; Leadership Development</a>
+			
+			<a href="/sites/AL/CD/Pages/competency_skills.aspx?&FilterField1=Asset_x0020_Type&FilterValue1=Skillsoft" unselectable="on">Competency/Skills Development Guide</a>
+			<a href="/sites/AL/CD/Pages/other_development_resources.aspx" unselectable="on">Other Development Resources</a>
+			<a href="/sites/AL/CD/Pages/career_paths_02.aspx" unselectable="on">Career Paths</a>
+			
+
+		</div>
+	</div>
+	<div class="dropdown" unselectable="on"> 
+		<a class="dropbtn grad" href="/sites/AL/FD/Pages/foundations_new.aspx" style="color:#fff; text-decoration:none;" id="newhire_navbtn">New Hire Programs
+			<!--<button class="dropbtn grad">New Hire Programs</button>-->
+		</a>
+		<div class="dropdown-content" unselectable="on"> 
+			<a href="/sites/AL/FD/Pages/Business_Direct.aspx" unselectable="on">Business Direct</a>
+			<a href="/sites/AL/FD/Pages/customer_service_home.aspx" unselectable="on">Customer Service</a>
+			<a href="/sites/AL/FD/Pages/financial_services.aspx" unselectable="on">Financial Services</a>
+			<a href="/sites/AL/FD/Pages/National_Retail_Onboarding.aspx" unselectable="on">National Retail</a>
+			<a href="/sites/AL/FD/Pages/order_processing.aspx" unselectable="on">Order Processing</a>
+			<a href="/sites/AL/FD/Pages/prepaid_home.aspx" unselectable="on">Prepaid</a>
+			<a href="/sites/AL/FD/Pages/retail_home.aspx" unselectable="on">Retail</a>
+			<a href="/sites/AL/FD/Pages/TS_Queue.aspx" unselectable="on">Technical Support Queue</a>
+			<a href="/sites/AL/FD/Pages/telesales.aspx" unselectable="on">Telesales</a>
+		<!--	<a href="/sites/AL/FD/Pages/universal_bilingual_home.aspx" unselectable="on">Universal Bilingual Queue</a>-->
+		</div> 
+	</div>
+	<div class="dropdown" unselectable="on"> 
+		<a class="dropbtn grad" href="/sites/AL/LD/Pages/leadership_development.aspx" style="color:#fff; text-decoration:none;" id="leader_navbtn">Leadership Programs
+			<!--<button class="dropbtn grad" unselectable="on">Leadership Programs</button>-->
+		</a> 
+		<div class="dropdown-content" unselectable="on"> 
+			<a href="/sites/AL/LD/Pages/L101.aspx" unselectable="on">Leadership 101</a>
+			<a href="/sites/AL/LD/Pages/L201.aspx" unselectable="on">Leadership 201</a>
+			<a href="/sites/AL/LD/Pages/nsmot.aspx" unselectable="on">New Store Manager Operations Training</a>
+		</div>
+	</div>
+	<div class="dropdown" unselectable="on">
+		<a class="dropbtn grad" href="/sites/AL/SD/Pages/Sales_Development.aspx" style="color:#fff; text-decoration:none;" id="sales_navbtn">Sales Programs
+			<!--<button class="dropbtn grad" unselectable="on">Sales Programs</button>-->
+		</a> 
+		<div class="dropdown-content" unselectable="on">
+			<!--<a href="/sites/AL/SD/Pages/SL101.aspx" unselectable="on">Sales 101</a> -->
+			<a href="/sites/AL/SD/Pages/SD_Workshop.aspx" unselectable="on">Sales Development Workshop</a>
+			<a href="/sites/AL/SD/Pages/plan_2_win.aspx" unselectable="on">Plan 2 Win</a>
+			<a href="/sites/AL/SD/Pages/SMB_Skills_Library.aspx" unselectable="on">Developing SMB Selling Skills Library</a>
+		</div>
+	</div>
+</div>
+
+<!--javascript code below adds a border pixel underneath the nav button depending where the user has landed.-->
+<script type="text/javascript">
+	
+		function highlightednav(){
+		var pageUrl = document.location.href; //gets url from browser
+		var talentmurl = "/AL/TM/"; 
+		var careerurl = "/AL/CD/";
+		var newhireurl = "/AL/FD/";
+		var leaderurl = "/AL/LD/";
+		var salesurl = "/AL/SD/";
+		var businessurl = "/AL/BS/";
+			
+		if (pageUrl.indexOf(talentmurl) > 0) {
+			document.getElementById("talentm_navbtn").style.borderBottom = "4px solid #0065A4";
+   			console.log('talent button is highlighted');
+				
+				
+			} else if (pageUrl.indexOf(careerurl) > 0){
+				document.getElementById("career_navbtn").style.borderBottom = "4px solid #0065A4";
+				 console.log('career button is highlighted');
+				
+			} else if (pageUrl.indexOf(newhireurl) > 0){
+				document.getElementById("newhire_navbtn").style.borderBottom = "4px solid #0065A4";
+				console.log("new hire button is highlighted");
+				
+			} else if (pageUrl.indexOf(salesurl) > 0){
+				document.getElementById("sales_navbtn").style.borderBottom = "4px solid #0065A4";
+				console.log("sales button is highlighted");
+				
+			} else if (pageUrl.indexOf(leaderurl) > 0){
+				document.getElementById("leader_navbtn").style.borderBottom = "4px solid #0065A4";
+				console.log("leadership button is highlighted");
+				
+			} else{
+				console.log("there is nothing here");
+				
+			}
+			
+		
+		}
+	
+	window.onload=highlightednav;
+	
+	</script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+	<!--[if gte mso 9]><xml>
+	<mso:CustomDocumentProperties>
+	<mso:_dlc_DocId msdt:dt="string">0061934265440122017</mso:_dlc_DocId>
+	<mso:_dlc_DocIdItemGuid msdt:dt="string">2ec86f23-806d-410b-a44d-e6515c6f780d</mso:_dlc_DocIdItemGuid>
+	<mso:_dlc_DocIdUrl msdt:dt="string">https://uscstage.intranet.teldta.com/sites/AL/_layouts/15/DocIdRedir.aspx?ID=0061934265440122017, 0061934265440122017</mso:_dlc_DocIdUrl>
+	<mso:TaxCatchAll msdt:dt="string">1;#Internal Use|1d0062ad-5abf-449b-a54a-979127bbc5bd</mso:TaxCatchAll>
+<mso:m17f9c25fd4d4cdd9ebdaeb81e264d03 msdt:dt="string">Internal Use|1d0062ad-5abf-449b-a54a-979127bbc5bd</mso:m17f9c25fd4d4cdd9ebdaeb81e264d03>
+<mso:Information_x0020_Classification msdt:dt="string">1;#Internal Use|1d0062ad-5abf-449b-a54a-979127bbc5bd</mso:Information_x0020_Classification>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Jankowski, Anthony</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Steinmetz, David</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ja804540748a4e438fdb3362016160d9 msdt:dt="string">Internal Use|1d0062ad-5abf-449b-a54a-979127bbc5bd</mso:ja804540748a4e438fdb3362016160d9>
+</mso:CustomDocumentProperties>
+	</xml><![endif]-->
+<title></title></head>
